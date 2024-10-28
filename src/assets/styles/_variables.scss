@@ -10,3 +10,21 @@ $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
 $mqMinWidth: 420px;
+
+
+// Colores específicos para la página de "La Vinya de Mallorca"
+$header-bg-color: #c1dc46;
+$header-text-color: #ffffff;
+$section-bg-color: #f3f0e7;
+$footer-bg-color: #668023;
+$footer-text-color: #ffffff;
+$nav-link-color: #668023;
+$nav-link-hover-color: color.scale($nav-link-color, $lightness: -20%);
+$gallery-box-shadow: rgba(0, 0, 0, 0.2);
+$gallery-max-width: 180px;
+
+// .color1 #c1dc46;
+// .color2 #d7dca8;
+// .color3 #668023;
+// .color4 #60769a;
+// .color5 #d2c0a7;
