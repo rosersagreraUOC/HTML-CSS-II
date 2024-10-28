@@ -5,16 +5,16 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
+$uoc-corporate: #455718;
+$uoc-masterbrand: #a0d6a9;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
 $mqMinWidth: 420px;
 
 
 // Colores específicos para la página de "La Vinya de Mallorca"
-$header-bg-color: #c1dc46;
-$header-text-color: #ffffff;
+$header-bg-color: #668023;
+$header-text-color: #d2c0a7;
 $section-bg-color: #f3f0e7;
 $footer-bg-color: #668023;
 $footer-text-color: #ffffff;
@@ -23,8 +23,3 @@ $nav-link-hover-color: color.scale($nav-link-color, $lightness: -20%);
 $gallery-box-shadow: rgba(0, 0, 0, 0.2);
 $gallery-max-width: 180px;
 
-// .color1 #c1dc46;
-// .color2 #d7dca8;
-// .color3 #668023;
-// .color4 #60769a;
-// .color5 #d2c0a7;
