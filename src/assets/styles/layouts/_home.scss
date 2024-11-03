@@ -14,12 +14,12 @@ body {
   background-color: $section-bg-color;
 }
 
-/* Encabezado */
 .header {
-  background-color: $header-bg-color;
-  color: $header-text-color;
   padding: 1.5em;
+  color: $header-text-color;
   text-align: center;
+  background-color: $header-bg-color;
+
 
   h1 {
     margin: 0;
@@ -27,49 +27,52 @@ body {
   }
 }
 
-/* Navegación */
+/* Nav */
 .nav {
-  text-align: center;
   padding: 1em 0;
+  text-align: center;
+  
 
   a {
-    margin: 0 1em;
-    text-decoration: none;
-    color: $nav-link-color;
-    font-weight: bold;
-    display: inline-flex; /* Alinea el ícono y el texto */
+    display: inline-flex;
     align-items: center;
+    margin: 0 1em;
+    font-weight: bold;
+    color: $nav-link-color;
+    text-decoration: none;
+
 
     i {
-      margin-right: 0.5em; /* Espacio entre el ícono y el texto */
-      color: $nav-link-color; /* Color del ícono igual al enlace */
+      margin-right: 0.5em; 
+      color: $nav-link-color; 
     }
 
     &:hover {
       color: $nav-link-hover-color;
     
       i {
-        color: $nav-link-hover-color; /* Cambia también el color del ícono en hover */
+        color: $nav-link-hover-color; 
       }
     }
   }
 }
 
-/* Secciones de contenido */
+
 .section {
-  padding: 2em;
   max-width: 800px;
+  padding: 2em;
   margin: 0 auto;
 
   h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    display: flex; /* Para alinear el ícono con el texto */
+    display: flex;
     align-items: center;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+
 
     i {
-      margin-right: 0.5em; /* Espacio entre el ícono y el texto */
-      color: $header-text-color; /* Color del ícono según el color del encabezado */
+      margin-right: 0.5em; 
+      color: $header-text-color; 
     }
   }
 
@@ -88,8 +91,8 @@ body {
 
   img {
     width: 100%;
-    height: auto;
     max-width: $gallery-max-width;
+    height: auto;
     border-radius: 5px;
     box-shadow: 0 2px 5px $gallery-box-shadow;
   }
@@ -97,30 +100,30 @@ body {
 
 /* Pie de página */
 .footer {
-  background-color: $footer-bg-color;
-  color: $footer-text-color;
-  text-align: center;
   padding: 1em 0;
   font-size: 0.8em;
+  color: $footer-text-color;
+  text-align: center;
+  background-color: $footer-bg-color;
 }
 
 /* Imagen Hero */
 .hero {
-  width: 100%; /* Ocupa el ancho completo */
-  overflow: hidden; /* Oculta cualquier desbordamiento */
+  width: 100%; 
+  overflow: hidden; 
 
   img {
-    width: 100%; /* La imagen ocupa el ancho completo */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina el espacio inferior */
-    max-height: 400px; /* Controla la altura máxima (ajusta según sea necesario) */
-    object-fit: cover; /* Cubre el espacio manteniendo el centro de la imagen visible */
+    display: block; 
+    width: 100%; 
+    height: auto; 
+    max-height: 400px; 
+    object-fit: cover;
   }
 }
 
-/* Media Queries para hacer la página responsive */
 
-/* Pantallas pequeñas (teléfonos) */
+
+/* Pantallas pequeñas */
 @media (max-width: 600px) {
   .header h1 {
     font-size: 1.5em;
@@ -133,8 +136,8 @@ body {
   }
 
   .nav a {
-    font-size: 1em;
     padding: 0.5em;
+    font-size: 1em;
   }
 
   .section {
@@ -150,7 +153,7 @@ body {
   }
 }
 
-/* Pantallas medianas (tabletas) */
+/* Pantallas medianas */
 @media (min-width: 601px) and (max-width: 1024px) {
   .header h1 {
     font-size: 2em;
@@ -169,11 +172,11 @@ body {
   }
 
   .hero img {
-    max-height: 300px; /* Ajuste de altura en tabletas */
+    max-height: 300px; 
   }
 }
 
-/* Pantallas grandes (ordenadores de escritorio) */
+/* Pantallas grandes */
 @media (min-width: 1025px) {
   .header h1 {
     font-size: 2.5em;
@@ -192,6 +195,6 @@ body {
   }
 
   .hero img {
-    max-height: 400px; /* Altura máxima para pantallas grandes */
+    max-height: 400px;
   }
 }
